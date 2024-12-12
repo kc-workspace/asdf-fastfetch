@@ -1,0 +1,60 @@
+---
+## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v2.8.0
+_src_path: gh:kc-workspace/asdf-plugin-template.git
+addon_yaml:
+    archive: true
+    checksum: false
+    download: true
+    fetch: true
+    git: false
+    github: true
+    gpg: false
+    help: true
+    install: true
+    package: false
+    python: false
+    system: true
+    tags: true
+    version: false
+app_desc: A feature-rich and performance oriented, system information tool.
+app_name: fastfetch
+app_repo: https://github.com/fastfetch-cli/fastfetch
+app_type: standalone
+app_website: https://github.com/fastfetch-cli/fastfetch
+archive_conf_path: usr/bin
+archive_conf_strip: 1
+archive_enabled: true
+archive_regex: (\\.tar\\.gz|\\.zip)$
+checksum_enabled: false
+custom_bin_paths: bin
+custom_non_stable_version: (-src|-dev|-latest|-stm|[-\.]rc|-alpha|-beta|[-\.]pre|-next|snapshot|master)
+custom_require_commands: ''
+download_url: https://github.com/fastfetch-cli/fastfetch/releases/download/{version}/fastfetch-{os}-{arch}.tar.gz
+gpg_enabled: false
+install_map_enabled: true
+install_map_method: move
+install_map_yaml:
+    fastfetch: bin/fastfetch
+package_enabled: false
+plugin_author: Kamontat Chantrachirathumrong
+plugin_name: asdf-fastfetch
+plugin_org: kc-workspace
+plugin_repo: https://github.com/kc-workspace/asdf-fastfetch.git
+source_enabled: false
+sys_arch_enabled: true
+sys_arch_yaml:
+    aarch64*: aarch64
+    arm64: aarch64
+    armv5*: armv7l
+    armv6*: armv7l
+    armv7*: armv7l
+    x86_64: amd64
+sys_ext_enabled: false
+sys_os_enabled: true
+sys_os_yaml:
+    darwin: macos
+    linux: linux
+test_cmd_args: --version
+version_file_enabled: false
+version_prefix: ''
